@@ -9,11 +9,13 @@ struct Command: Encodable {
     let model: String
     let maxTokens: Int
     let temperature: Double
+    let logprobs: Int
     
     enum CodingKeys: String, CodingKey {
         case prompt
         case model
         case maxTokens = "max_tokens"
         case temperature
+        case logprobs
     }
 }
