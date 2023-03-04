@@ -50,6 +50,12 @@ public enum OpenAIModelType {
         ///
         /// > Model Name: text-ada-001
         case ada = "text-ada-001"
+        
+        
+        /// Customized ada model with ocr result
+        ///
+        /// > Model Name: "ada:ft-personal:text-in-the-world-cat-11-2023-02-17-02-55-20"
+        case ada_ocr = "ada:ft-personal:text-in-the-world-cat-11-2023-02-17-02-55-20"
     }
     
     /// A set of models that can understand and generate code, including translating natural language to code
