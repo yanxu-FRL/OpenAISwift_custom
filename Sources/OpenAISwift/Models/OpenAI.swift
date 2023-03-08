@@ -16,7 +16,7 @@ public struct Choice: Codable {
 }
 
 public struct Logprobs: Codable {
-    public let top_logprobs: [String: Double]
+    public let top_logprobs: [[String: Double]]
 }
 
 
