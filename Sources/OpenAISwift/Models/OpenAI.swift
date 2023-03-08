@@ -12,4 +12,12 @@ public struct OpenAI: Codable {
 
 public struct Choice: Codable {
     public let text: String
+    public let logprobs: Codable
 }
+
+public struct logprobs: Coadable {
+    public let top_logprobs: [String: Double]()
+}
+
+
+
