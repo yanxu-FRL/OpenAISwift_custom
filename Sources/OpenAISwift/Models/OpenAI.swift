@@ -12,10 +12,10 @@ public struct OpenAI: Codable {
 
 public struct Choice: Codable {
     public let text: String
-    public let logprobs: Codable
+    public let logprobs: Logprobs
 }
 
-public struct logprobs: Codable {
+public struct Logprobs: Codable {
     public let top_logprobs: [String: Double]()
 }
 
